@@ -1,12 +1,12 @@
 # Gender Differences in Executives’ Corporate Decision-Making in the Covid-19 Pandemic
 
 ## Intro
-This is a senior capstone project in Data Science for NYU Shanghai Fall 2023. This repo presents neat and comprehensive documentation of our contributions to gender-related behavioral research in corporate finance:
-- Literature review:
-- Construct datasets from WRDS database: [dataset]()
-- Conduct data processing: [Python code]()
-- Conduct regression analysis: [R code]()
-- Draft progress report: [report]()
+This is a senior capstone project in Data Science for NYU Shanghai Fall 2023. This repo presents neat and comprehensive documentation of our contributions to gender-related behavioral research in corporate finance under COVID:
+- Literature review
+- Construct datasets from WRDS database: [datasets](https://drive.google.com/drive/folders/1gQpdYr2HWfVwZJeqvgmkBv8pZQB4V1zv?usp=sharing)
+- Conduct data processing: [Python code](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/DataProcessing.ipynb)
+- Conduct regression analysis: [R code](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/Regression.R)
+- Draft progress report: [report](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/CapstoneReport.pdf)
 
 
 ## Authors
