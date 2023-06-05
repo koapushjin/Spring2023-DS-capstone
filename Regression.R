@@ -1,4 +1,4 @@
-## This R file contains codes for computing variables, data imputations, and regression analyses.
+## This R file contains codes for generating variables, data imputations, and regression analyses.
 
 # import packages
 library(dplyr)
