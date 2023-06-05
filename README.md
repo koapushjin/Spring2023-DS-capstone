@@ -8,9 +8,9 @@ In this study, we examine gender differences in executives’ corporate decision
 
 ## CONTENT
 - [LitReview.xlsx](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/LitReview.xlsx): a spreedsheet listing our literature review results.
-    - Sheet **Literature**: key information of important literature to this research.
-    - Sheet **Useful**: main literature under each key aspect of corporate decision-making (risk-taking, cash holdings, innovation).
-    - Sheet **Variable**: key variables to this research that should be obtained from WRDS database for analysis.
+    - Sheet *Literature*: key information of important literature to this research.
+    - Sheet *Useful*: main literature under each aspect of corporate decision-making (risk-taking, cash holdings, innovation) discussed in this research.
+    - Sheet *Variable*: key variables that should be obtained from WRDS database for analysis.
 - [Data](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/Data): the data folder contains both raw data constructed from WRDS database and the dataset used for regression analysis after pre-processing.
     - [Corporate.csv](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/Data/corporate.csv): raw corporations’ financial data obtained from [Compustat](https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/north-america-daily/fundamentals-annual/) (a market and corporate finance database on global companies).
     - [Executive.csv](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/Data/executive.csv): raw executive data obtained from [Execucomp](https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/execucomp/annual-compensation/) (a database including information about public companies’ executives in the United States).
