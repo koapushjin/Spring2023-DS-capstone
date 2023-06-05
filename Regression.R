@@ -1,3 +1,5 @@
+## This R file contains codes for data generations, imputations, and regression analyses.
+
 # import packages
 library(dplyr)
 library(tidyverse)
