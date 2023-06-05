@@ -65,7 +65,7 @@ f2015<-subset(d,fyear=2015)
 
 
 ### Clustered standard errors
-## 1. R&D
+## 1. R&D: analyze how Covid affects corporate decisions related to innovation, measured by R&D expenditures
 
 #Have female, clusterd by company and year
 reg1 = felm(R_D~post_covid*have_fem+log(at)+log_sale+M_B+ppent+avg_TDC1+Liquidity_lagged+
@@ -102,8 +102,8 @@ stargazer(reg1,reg2,reg3,reg4,type='html',
                          c("Year FE", "Yes", "Yes","Yes","Yes")),c("Politics FE", "Yes", "Yes","Yes","Yes"), c("Clustered SE", "Company + Year", "Industry + Year","Company + Year","Industry + Year"),out ="/Users/skylermacbook/Desktop/DS Capstone/table/RD.tex")
 
 
-## 2. Risk-taking
-# a. Leverage
+## 2. Risk-taking: analyze how Covid affects corporate decisions related to risk-taking
+# a. Leverage (as a measure of risk-taking)
 
 #Have female, clusterd by company and year
 reg5 = felm(Leverage~post_covid*have_fem+log(at)+log_sale+M_B+ppent+avg_TDC1+Liquidity_lagged+
@@ -139,7 +139,7 @@ stargazer(reg5,reg6,reg7,reg8,type='html',
                          c("Politics FE", "Yes", "Yes","Yes","Yes"), 
                          c("Clustered SE", "Company + Year", "Industry + Year","Company + Year","Industry + Year"),out = "/Users/skylermacbook/Desktop/DS Capstone/table/Lev.tex")
 
-# b. stock volatility
+# b. stock volatility (as another measure of risk-taking)
 
 #Have female, clusterd by company and year
 reg9 = felm(prccd_var~post_covid*have_fem+log(at)+log_sale+M_B+ppent+avg_TDC1+Liquidity_lagged+
@@ -175,7 +175,7 @@ stargazer(reg9,reg10,reg11,reg12,type='html',
                          c("Politics FE", "Yes", "Yes","Yes","Yes"), 
                          c("Clustered SE", "Company + Year", "Industry + Year","Company + Year","Industry + Year"),out = "/Users/skylermacbook/Desktop/DS Capstone/table/vol.tex")
 
-## 3. Cash holdings
+## 3. Cash holdings (analyze how Covid affects corporate cash holdings)
 #Have female, clusterd by company and year
 reg13 = felm(CashHolding~post_covid*have_fem+log(at)+log_sale+M_B+ppent+avg_TDC1+Liquidity_lagged+
               avg_age+ROE+factor(fyear) | industry+politics | 0 | gvkey+fyear, data = d)
