@@ -124,7 +124,7 @@ reg7 = felm(Leverage~post_covid*pct_female+log(at)+log_sale+M_B+ppent+avg_TDC1+L
 summary(reg7)
 
 
-## Female percentage as the independent variable, clusterd by industry and year
+# Female percentage as the independent variable, clusterd by industry and year
 reg8 = felm(Leverage~post_covid*pct_female+log(at)+log_sale+M_B+ppent+avg_TDC1+Liquidity_lagged+
               avg_age+ROE +factor(fyear)| industry+politics | 0 | industry+fyear, data = d)
 
@@ -160,7 +160,7 @@ reg11 = felm(prccd_var~post_covid*pct_female+log(at)+log_sale+M_B+ppent+avg_TDC1
 summary(reg11)
 
 
-## Female percentage as the independent variable, clusterd by industry and year
+# Female percentage as the independent variable, clusterd by industry and year
 reg12 = felm(prccd_var~post_covid*pct_female+log(at)+log_sale+M_B+ppent+avg_TDC1+Liquidity_lagged+
               avg_age+ROE+factor(fyear) | industry+politics | 0 | industry+fyear, data = d)
 
@@ -195,7 +195,7 @@ reg15 = felm(CashHolding~post_covid*pct_female+log(at)+log_sale+M_B+ppent+avg_TD
 summary(reg15)
 
 
-## Female percentage as the independent variable, clusterd by industry and year
+# Female percentage as the independent variable, clusterd by industry and year
 reg16 = felm(CashHolding~post_covid*pct_female+log(at)+log_sale+M_B+ppent+avg_TDC1+Liquidity_lagged+
                avg_age+ROE+factor(fyear)| industry+politics | 0 | industry+fyear, data = d)
 
