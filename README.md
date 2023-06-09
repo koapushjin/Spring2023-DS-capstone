@@ -12,17 +12,11 @@ In this research, we examine gender differences in executives’ corporate decis
     - Sheet *Useful*: main literature under each aspect of corporate decision-making (risk-taking, cash holdings, innovation) discussed in this research.
     - Sheet *Variable*: key variables that should be obtained from WRDS database for analysis.
 - **Data**: for the purpose of our work, we used the following data extracted from the WRDS database.
-	- raw executive data obtained from Execucomp (a database including information about public companies’ executives in the United States);
-	- raw corporations’ financial data obtained from Compustat (a market and corporate finance database on global companies);
-	- raw data of different corporations' daily stock obtained from CRSP US Stock Database (a comprehensive database containing market and corporate action data for over 32,000 securities);
+	- raw executive data obtained from [Execucomp](https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/execucomp/annual-compensation/) (a database including information about public companies’ executives in the United States);
+	- raw corporations’ financial data obtained from [Compustat](https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/north-america-daily/fundamentals-annual/) (a market and corporate finance database on global companies);
+	- raw data of different corporations' daily stock obtained from [CRSP US Stock Database](https://wrds-www.wharton.upenn.edu/pages/get-data/center-research-security-prices-crsp/annual-update/crspcompustat-merged/security-monthly/) (a comprehensive database containing market and corporate action data for over 32,000 securities);
 	- volatility data of each corporation calculated from the above raw stock data;
 	- output dataset after pre-processing and merging the above raw data; utilized in regression analysis.
-- [Data](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/Data): the data folder contains both raw data constructed from WRDS database and the dataset used for regression analysis after pre-processing.
-    - [Executive.csv](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/Data/executive.csv): raw executive data obtained from [Execucomp](https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/execucomp/annual-compensation/) (a database including information about public companies’ executives in the United States).
-    - [Corporate.csv](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/Data/corporate.csv): raw corporations’ financial data obtained from [Compustat](https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/north-america-daily/fundamentals-annual/) (a market and corporate finance database on global companies).
-    - [Stock.csv](https://drive.google.com/file/d/1slPZGJxyjTwm8nJsIvJaeyKdDaf0Yazw/view?usp=sharing): raw data of different corporations' daily stock obtained from [CRSP US Stock Database](https://wrds-www.wharton.upenn.edu/pages/get-data/center-research-security-prices-crsp/annual-update/crspcompustat-merged/security-monthly/) (a comprehensive database containing market and corporate action data for over 32,000 securities).
-    - [Volatility.csv](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/Data/Volatility.csv): volatility data of each corporation calculated from the above raw stock data.
-    - [Merged.csv](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/Data/merged.csv): the output dataset after pre-processing and merging the above raw data. Will be utilized in regression analysis.
 - [DataProcessing.ipynb](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/DataProcessing.ipynb): the Python code of pre-processing the raw data with annotation.
 - [Regression.R](https://github.com/koapushjin/Spring2023-DS-capstone/blob/main/Regression.R): the R code of conducting regression analysis with annotation.
 
